@@ -15,3 +15,20 @@ body {
     display: none;
 }
 
+#tasks-list li {
+    cursor: pointer;
+}
+
+#tasks-list li:hover {
+    border: solid;
+    border-color: #337ab7;
+}
+
+.completed-task {
+    color: #AAA;
+    text-decoration: line-through;
+}
+
+#rating {
+    color: gold;
+}
