@@ -14,6 +14,7 @@ body {
 .fa-spin {
     display: none;
 }
+<<<<<<< HEAD
 
 #tasks-list li {
     cursor: pointer;
@@ -32,3 +33,5 @@ body {
 #rating {
     color: gold;
 }
+=======
+>>>>>>> 0e1f3c03a332ce37c172bdee43ad742a11ba4994
