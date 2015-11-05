@@ -1,36 +1,34 @@
 <h1>Edit {{contact.fname}} {{contact.lname}}</h1>
 
 <form name="contactForm" novalidate ng-submit="save()">
+    <!--form-group is bootstrap-->
     <div class="form-group">
-        <label for="fnameImp">First Name:</label>
-        <input type="text" class="form-control" id="fnameImp"
-                name="fnameImp" ng-model="contact.fname"/>
+        <label for="fnameInp">First Name:</label>
+        <input type="text" class="form-control" id="fnameInp"
+               name="fnameInp" ng-model="contact.fname"/> <!--bind to contact.fname-->
     </div>
-
     <div class="form-group">
-        <label for="lnameImp">Last Name:</label>
-        <input type="text" class="form-control" id="lnameImp"
-               name="lnameImp" ng-model="contact.lname" required/>
+        <label for="lnameInp">Last Name:</label>
+        <input type="text" class="form-control" id="lnameInp"
+               name="lnameInp" ng-model="contact.lname" required/>
         <p class="validation-error"
-           ng-if="contactForm.lnameImp.$error.required">Last name is required</p>
+           ng-if="contactForm.lnameInp.$error.required">Last Name is required</p>
     </div>
-
     <div class="form-group">
-        <label for="phoneImp">Phone Number:</label>
-        <input type="text" class="form-control" id="phoneImp"
-               name="phoneImp" ng-model="contact.phoneImp"
-               pattern="\d{3}-\d{3}-d{4}"/>
+        <label for="phoneInp">Phone:</label>
+        <input type="text" class="form-control" id="phoneInp"
+               name="phoneInp" ng-model="contact.phone"
+               pattern="\d{3}-\d{3}-\d{4}"/>
+        <p class="validation-error"
+           ng-if="contactForm.phoneInp.$error.pattern">Phone must be xxx-xxx-xxxx</p>
     </div>
-
     <div class="form-group">
-        <label for="dobImp">Birthdate:</label>
-        <input type="text" class="form-control" id="dobImp"
-               name="dobImp" ng-model="contact.dobImp"/>
+        <label for="dobInp">Birthdate:</label>
+        <input type="text" class="form-control" id="dobInp"
+               name="dobInp" ng-model="contact.dob"/>
     </div>
-
     <div class="form-group">
-        <a class="btn btn-default" ui-sref="list">Cancel</a>
-        <button type="submit" class="btn btn-primary"
-                ng-disabled="contactForm.$invalid">Save</button>
+        <a clas="btn btn-default" ui-sref="list">Cancel</a>
+        <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid">Save</button>
     </div>
 </form>
