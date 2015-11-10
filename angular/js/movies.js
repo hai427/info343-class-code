@@ -9,6 +9,7 @@ angular.module('Movies', [])
             'NC-17': 5,
             'X': 6
         }
+        
         $http.get('data/movies-2014.min.json')
            .then(function(results) {
               $scope.movies = results.data.map(function(movie) {
@@ -17,6 +18,7 @@ angular.module('Movies', [])
               });
               $scope.distributors = _.uniq(_.pluck($scope.movies, 'distributor'));
            });
+    
         $scope.setSort = function(propertyName) {
             if ($scope.sortCol === propertyName) {
                 $scope.sortReverse = !$scope.sortReverse;
