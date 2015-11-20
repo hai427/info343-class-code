@@ -3,14 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <title>Camera Example</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+        <p>
+            <label for="line-color-inp">Line Color:</label>
+            <input type="color" name="line-color-inp" id="line-color-inp" value="#000000">
+        </p>
+        <p>
+            <label for="stroke-width-inp">Stroke Width:</label>
+            <input type="number" name="stroke-width-inp" id="stroke-width-inp"/>
+        </p>
+        <p>
+            <button onclick="erase()">Erase</button>
+        </p>
+
         <p>
             <video autoplay></video>
         </p>
         <p>
             <canvas></canvas>
+        </p>
+        <p>
+            <button id="btnSnapshot">Snapshot</button>
+            <img src="img/snapshot.svg" alt="snapshot of canvas"/>
         </p>
 
         <script src="js/app.js"></script>    
