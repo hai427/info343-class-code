@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seattle Traffic</title>
+        
+        <!-- Leaflet stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.css">
+
+        <!-- your stylesheet -->
+        <link rel="stylesheet" href="css/main.css"/>
+        
+        <!-- page icon -->
+        <link rel="icon" href="img/page-icon.png"/>
+        
+        <!-- bootstrap stylesheet -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    
+    <body>
+        <div class="container" id="header">
+            <h2>Seattle Traffic Cams</h2>
+            <p>
+                <span id="sdotCount"></span> by
+                <span id="sdot"> SDOT</span>, 
+                <span id="wsdotCount"></span> by
+                <span id="wsdot"> WSDOT</span> 
+            </p>
+            <input type="search" class="form-control" placeholder="Search here..." autofocus/>
+        </div>
+       
+        <div id="map"></div>
+
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+        <!-- Leaflet library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.js"></script>
+
+        <!-- your script file -->
+        <script src="js/app.js"></script>
+    </body>
+</html>

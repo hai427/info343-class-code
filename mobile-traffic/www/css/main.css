@@ -1,0 +1,39 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#map {
+    height: 100%;
+}
+
+img {
+    width: 250px;   
+}
+
+#header {
+    background-color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    z-index: 1;
+}
+
+#wsdot, #sdot {
+    font-weight: bold;
+}
+
+#wsdot {
+    color: #BC5A34;
+}
+
+#sdot {
+    color: #0065B1;
+}
