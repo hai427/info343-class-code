@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector("header .banner-image");window.addEventListener("scroll",function(){var n=100-window.scrollY/5,t=window.scrollY/100,r="brightness("+n+"%) blur("+t+"px)";e.style.webkitFilter=r,e.style.filter=r})});
